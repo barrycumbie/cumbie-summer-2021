@@ -9,6 +9,13 @@ $(document).ready(function() {
             $('#dev-profile-data').append("<p><b>" + key + ":</b>" + " " + valueObj + "</p>");
         }
     });
+
+    $('#month-box li').click(function() {
+        $('#console-box').text($(this).text());
+        $(this).toggleClass('selected').siblings().removeClass('selected');;
+    });
+
+
 });
 
 const devProfile = {
